@@ -80,6 +80,7 @@ header nav ul li a {
   border-radius: 3px;
   text-align: center;
   font-size: 1.25rem;
+  color: rgb(6, 64, 108);
 }
 header nav ul li a:hover {
   color: whitesmoke;
@@ -126,6 +127,16 @@ footer div .iconos {
 }
 .bienvenida img {
   width: 100%;
+}
+
+.mapaUbicacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.mapaUbicacion div {
+  word-spacing: 0.2rem;
 }
 
 .menuNosotros {
@@ -290,12 +301,12 @@ footer div .iconos {
   padding: 0.5rem;
 }
 .menuBusquedas .busquedasRecuadro .button {
-  background-color: rgba(255, 127, 80, 0.425);
+  background-color: rgba(6, 117, 120, 0.425);
   border-radius: 15%;
-  border: 2px solid blueviolet;
   cursor: pointer;
   margin: 1rem;
   padding: 0.1rem;
+  color: #fff;
 }
 .menuBusquedas .busquedasRecuadro .button:hover {
   background-color: rgb(223, 88, 39);
@@ -306,7 +317,6 @@ footer div .iconos {
   line-height: 3.125rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr 0.5fr;
   grid-template-areas: "encabezado encabezado" "formulario video";
   grid-column-gap: 5rem;
   margin: 1rem;
@@ -323,11 +333,8 @@ footer div .iconos {
   grid-area: formulario;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
-  padding: 0.125rem;
+  padding: 0.2rem;
   box-shadow: inset 0 -3em 3em rgba(243, 88, 49, 0.753), 0 0 0 2px rgba(167, 19, 180, 0.527), 0.3em 0.3em 1em rgba(229, 123, 233, 0.952);
-  align-self: center;
-  justify-self: center;
 }
 .contacto section form fieldset div .itemForm {
   margin: 1rem;
@@ -345,15 +352,17 @@ footer div .iconos {
   margin: 1rem;
 }
 .contacto section form .botonesForm {
-  background-color: rgba(255, 127, 80, 0.425);
-  padding: 0.3rem;
+  background-color: rgba(6, 117, 120, 0.425);
+  padding: 0.5rem;
+  margin: 0.5rem;
   border-radius: 0.6rem;
-  color: aliceblue;
+  color: #000;
   cursor: pointer;
 }
 .contacto section form .botonesForm:hover {
   background-color: rgb(223, 88, 39);
   transform: translate(20px);
+  text-transform: uppercase;
 }
 .contacto .videoContacto {
   grid-area: video;

@@ -18,12 +18,17 @@
   }
 }
 
-// .mapaUbicacion {
-//   iframe{
-//     width: 400vw;
-//     height: 250vh;
-//   }
-// }
+.mapaUbicacion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+
+  div{
+    word-spacing: 0.2rem;
+  }
+
+}
   
 
 

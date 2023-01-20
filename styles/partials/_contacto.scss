@@ -3,7 +3,6 @@
   line-height: 3.125rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.5fr 0.5fr;
   grid-template-areas: 
   "encabezado encabezado"
   "formulario video";
@@ -24,15 +23,12 @@
       grid-area: formulario;
       display: flex;
       flex-direction: column;
-      align-content: space-between;
-      padding: 0.125rem;
+      padding: 0.2rem;
       box-shadow:
        inset 0 -3em 3em rgba(243, 88, 49, 0.753),
              0 0  0 2px rgba(167, 19, 180, 0.527),
              0.3em 0.3em 1em rgba(229, 123, 233, 0.952);
-      align-self: center;
-      justify-self: center;
-  
+    
       fieldset{
         div{
           .itemForm{
@@ -59,14 +55,16 @@
   
       .botonesForm {
         background-color: $colorbutton;
-        padding: 0.3rem;
+        padding: 0.5rem;
+        margin: 0.5rem;;
         border-radius: 0.6rem;
-        color: aliceblue;
+        color: #000;
         cursor: pointer;
   
         &:hover {
           background-color: $colorhover;
           transform: translate(20px);
+          text-transform:uppercase;
         }
       }
     }

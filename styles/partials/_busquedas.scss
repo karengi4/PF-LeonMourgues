@@ -26,10 +26,10 @@
       .button {
         background-color:$colorbutton;
         border-radius: 15%;
-        border: 2px solid blueviolet;
         cursor: pointer;
         margin: 1rem;
         padding: 0.1rem;
+        color: #fff;
 
         &:hover {
           background-color: $colorhover;
