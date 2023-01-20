@@ -2,7 +2,10 @@
   font-size: 1.5rem;
   line-height: 70px;
   text-align: center;
+
+  @include buttonPersonalizado()
 }
+
 .menuBusquedas {
   font-size: 1.25rem;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -23,17 +26,7 @@
     margin: 0.5rem;
     padding: 0.5rem;
 
-      .button {
-        background-color:$colorbutton;
-        border-radius: 15%;
-        cursor: pointer;
-        margin: 1rem;
-        padding: 0.1rem;
-        color: #fff;
-
-        &:hover {
-          background-color: $colorhover;
-        }
-      }
-    }  
-  }
+    @include buttonPersonalizado()
+    
+  }  
+}

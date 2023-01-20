@@ -1,31 +1,23 @@
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-}
-*::-moz-selection {
-  color: violet;
-  background-color: teal;
-}
-*::selection {
-  color: violet;
-  background-color: teal;
-}
+  box-sizing: border-box; }
+  *::selection {
+    color: violet;
+    background-color: teal; }
 
 a {
   text-decoration: none;
-  list-style-type: none;
-}
+  list-style-type: none; }
 
 body {
   height: 100vh;
   display: grid;
   grid-template-rows: 0.5fr 1fr 0.5fr;
   grid-template-columns: 1fr;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "header" "main" "footer";
   grid-row-gap: 5px;
-  grid-column-gap: 5px;
-}
+  grid-column-gap: 5px; }
 
 header {
   background: rgba(83, 161, 161, 0.679);
@@ -37,59 +29,47 @@ header {
   align-items: center;
   align-content: center;
   z-index: 1;
-  position: -webkit-sticky;
-  position: sticky;
-}
-header .logo {
-  height: 140px;
-}
-header .nombreConsultora {
-  flex-basis: 20%;
-  font-size: 1rem;
-  color: rgba(199, 84, 43, 0.728);
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-header .nombreConsultora::first-letter {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-header nav {
-  flex-basis: 60%;
-}
-header nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  color: white;
-}
-header nav ul li {
-  font-weight: bold;
-  text-align: center;
-  align-content: center;
-  list-style: none;
-  border-radius: 3px;
-}
-header nav ul li:nth-child(5) a {
-  color: beige;
-}
-header nav ul li a {
-  display: block;
-  text-decoration: none;
-  cursor: pointer;
-  border-radius: 3px;
-  text-align: center;
-  font-size: 1.25rem;
-  color: rgb(6, 64, 108);
-}
-header nav ul li a:hover {
-  color: whitesmoke;
-  background-color: rgba(228, 108, 64, 0.867);
-  transition: 0.5s;
-}
+  position: sticky; }
+  header .logo {
+    height: 140px; }
+  header .nombreConsultora {
+    flex-basis: 20%;
+    font-size: 1rem;
+    color: rgba(199, 84, 43, 0.728);
+    font-family: Georgia, 'Times New Roman', Times, serif; }
+    header .nombreConsultora::first-letter {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  header nav {
+    flex-basis: 60%; }
+    header nav ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      color: white; }
+      header nav ul li {
+        font-weight: bold;
+        text-align: center;
+        align-content: center;
+        list-style: none;
+        border-radius: 3px; }
+        header nav ul li:nth-child(5) a {
+          color: beige; }
+        header nav ul li a {
+          display: block;
+          text-decoration: none;
+          cursor: pointer;
+          border-radius: 3px;
+          text-align: center;
+          font-size: 1.25rem;
+          color: #06406c; }
+          header nav ul li a:hover {
+            color: whitesmoke;
+            background-color: rgba(228, 108, 64, 0.867);
+            transition: 0.5s; }
 
 main {
-  grid-area: main;
-}
+  grid-area: main; }
 
 footer {
   background-color: rgba(83, 161, 161, 0.679);
@@ -98,22 +78,19 @@ footer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-footer div .footer {
-  font-size: 0.8rem;
-  color: rgb(0, 0, 0);
-}
-footer div .iconos {
-  height: 30px;
-  margin: 5px;
-}
+  justify-content: space-evenly; }
+  footer div .footer {
+    font-size: 0.8rem;
+    color: black; }
+  footer div .iconos {
+    height: 30px;
+    margin: 5px; }
 
 .bienvenida {
   grid-area: bienvenida;
   word-spacing: 30px;
   line-height: 50px;
-  font-family: "Rubik Glitch", cursiva;
+  font-family: 'Rubik Glitch', cursiva;
   text-align: center;
   font-size: 1.25rem;
   display: flex;
@@ -122,22 +99,18 @@ footer div .iconos {
   align-items: center;
   justify-content: space-evenly;
   align-content: center;
-  margin: 16px;
-}
-.bienvenida .div {
-  width: 100%;
-}
+  margin: 16px; }
+  .bienvenida .div {
+    width: 100%; }
 
 .mapaUbicacion {
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-}
-.mapaUbicacion div {
-  word-spacing: 0.2rem;
-}
+  justify-content: space-evenly; }
+  .mapaUbicacion div {
+    word-spacing: 0.2rem; }
 
 .menuNosotros {
   display: grid;
@@ -145,39 +118,31 @@ footer div .iconos {
   grid-template-rows: 1fr;
   grid-template-areas: "nosotrosUno nosotrosDos nosotrosTres";
   grid-column-gap: 5px;
-  margin: 16px;
-}
-.menuNosotros .nosotros {
-  background-color: rgb(179, 134, 117);
-  padding: 15px;
-  border-radius: 15px;
-  font-size: 1.25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.menuNosotros .nosotros .nosotrosImagen {
-  width: 100%;
-  height: 50%;
-}
-.menuNosotros .nosotros .nosotrosTitulo {
-  color: rgb(139, 0, 139);
-  font-weight: bold;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.menuNosotros .nosotros .nosotrosParrafo {
-  text-align: justify;
-  color: black;
-}
-.menuNosotros .nosotrosUno {
-  grid-area: nosotrosUno;
-}
-.menuNosotros .nosotrosDos {
-  grid-area: nosotrosDos;
-}
-.menuNosotros .nosotrosTres {
-  grid-area: nosotrosTres;
-}
+  margin: 16px; }
+  .menuNosotros .nosotros {
+    background-color: #b38675;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .menuNosotros .nosotros .nosotrosImagen {
+      width: 100%;
+      height: 50%; }
+    .menuNosotros .nosotros .nosotrosTitulo {
+      color: darkmagenta;
+      font-weight: bold;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+    .menuNosotros .nosotros .nosotrosParrafo {
+      text-align: justify;
+      color: black; }
+  .menuNosotros .nosotrosUno {
+    grid-area: nosotrosUno; }
+  .menuNosotros .nosotrosDos {
+    grid-area: nosotrosDos; }
+  .menuNosotros .nosotrosTres {
+    grid-area: nosotrosTres; }
 
 #servicios {
   font-size: 1.25rem;
@@ -185,349 +150,280 @@ footer div .iconos {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "servicioUno servicioDos servicioTres" "servicioCuatro servicioCinco servicioSeis";
+  grid-template-areas: "servicioUno servicioDos servicioTres" "servicioCuatro servicioCinco servicioSeis";
   grid-column-gap: 5px;
-  margin: 16px;
-}
-#servicios .servicioUno {
-  grid-area: servicioUno;
-}
-#servicios .servicioUno .serviciosTitulo {
-  color: rgb(139, 0, 139);
-  list-style-type: none;
-  font-weight: bold;
-  line-height: 50px;
-}
-#servicios .servicioUno .serviciosParrafo {
-  background-color: rgb(179, 134, 117);
-  border-radius: 10%;
-  padding: 15px;
-}
-#servicios .servicioDos {
-  grid-area: servicioDos;
-}
-#servicios .servicioDos .serviciosTitulo {
-  color: rgb(139, 0, 139);
-  list-style-type: none;
-  font-weight: bold;
-  line-height: 50px;
-}
-#servicios .servicioDos .serviciosParrafo {
-  background-color: rgb(179, 134, 117);
-  border-radius: 10%;
-  padding: 15px;
-}
-#servicios .servicioTres {
-  grid-area: servicioTres;
-}
-#servicios .servicioTres .serviciosTitulo {
-  color: rgb(139, 0, 139);
-  list-style-type: none;
-  font-weight: bold;
-  line-height: 50px;
-}
-#servicios .servicioTres .serviciosParrafo {
-  background-color: rgb(179, 134, 117);
-  border-radius: 10%;
-  padding: 15px;
-}
-#servicios .servicioCuatro {
-  grid-area: servicioCuatro;
-}
-#servicios .servicioCuatro .serviciosTitulo {
-  color: rgb(139, 0, 139);
-  list-style-type: none;
-  font-weight: bold;
-  line-height: 50px;
-}
-#servicios .servicioCuatro .serviciosParrafo {
-  background-color: rgb(179, 134, 117);
-  border-radius: 10%;
-  padding: 15px;
-}
-#servicios .servicioCinco {
-  grid-area: servicioCinco;
-}
-#servicios .servicioCinco .serviciosTitulo {
-  color: rgb(139, 0, 139);
-  list-style-type: none;
-  font-weight: bold;
-  line-height: 50px;
-}
-#servicios .servicioCinco .serviciosParrafo {
-  background-color: rgb(179, 134, 117);
-  border-radius: 10%;
-  padding: 15px;
-}
-#servicios .servicioSeis {
-  grid-area: servicioSeis;
-}
-#servicios .servicioSeis .serviciosTitulo {
-  color: rgb(139, 0, 139);
-  list-style-type: none;
-  font-weight: bold;
-  line-height: 50px;
-}
-#servicios .servicioSeis .serviciosParrafo {
-  background-color: rgb(179, 134, 117);
-  border-radius: 10%;
-  padding: 15px;
-}
+  margin: 16px; }
+  #servicios .servicioUno {
+    grid-area: servicioUno; }
+    #servicios .servicioUno .serviciosTitulo {
+      color: darkmagenta;
+      list-style-type: none;
+      font-weight: bold;
+      line-height: 50px; }
+    #servicios .servicioUno .serviciosParrafo {
+      background-color: #b38675;
+      border-radius: 10%;
+      padding: 15px; }
+  #servicios .servicioDos {
+    grid-area: servicioDos; }
+    #servicios .servicioDos .serviciosTitulo {
+      color: darkmagenta;
+      list-style-type: none;
+      font-weight: bold;
+      line-height: 50px; }
+    #servicios .servicioDos .serviciosParrafo {
+      background-color: #b38675;
+      border-radius: 10%;
+      padding: 15px; }
+  #servicios .servicioTres {
+    grid-area: servicioTres; }
+    #servicios .servicioTres .serviciosTitulo {
+      color: darkmagenta;
+      list-style-type: none;
+      font-weight: bold;
+      line-height: 50px; }
+    #servicios .servicioTres .serviciosParrafo {
+      background-color: #b38675;
+      border-radius: 10%;
+      padding: 15px; }
+  #servicios .servicioCuatro {
+    grid-area: servicioCuatro; }
+    #servicios .servicioCuatro .serviciosTitulo {
+      color: darkmagenta;
+      list-style-type: none;
+      font-weight: bold;
+      line-height: 50px; }
+    #servicios .servicioCuatro .serviciosParrafo {
+      background-color: #b38675;
+      border-radius: 10%;
+      padding: 15px; }
+  #servicios .servicioCinco {
+    grid-area: servicioCinco; }
+    #servicios .servicioCinco .serviciosTitulo {
+      color: darkmagenta;
+      list-style-type: none;
+      font-weight: bold;
+      line-height: 50px; }
+    #servicios .servicioCinco .serviciosParrafo {
+      background-color: #b38675;
+      border-radius: 10%;
+      padding: 15px; }
+  #servicios .servicioSeis {
+    grid-area: servicioSeis; }
+    #servicios .servicioSeis .serviciosTitulo {
+      color: darkmagenta;
+      list-style-type: none;
+      font-weight: bold;
+      line-height: 50px; }
+    #servicios .servicioSeis .serviciosParrafo {
+      background-color: #b38675;
+      border-radius: 10%;
+      padding: 15px; }
 
 .busquedas {
   font-size: 1.5rem;
   line-height: 70px;
-  text-align: center;
-}
+  text-align: center; }
+  .busquedas .button {
+    background-color: rgba(6, 116, 120, 0.754);
+    border-radius: 15%;
+    cursor: pointer;
+    margin: 1rem;
+    padding: 0.1rem;
+    color: #fff; }
+    .busquedas .button:hover {
+      background-color: rgba(228, 108, 64, 0.867); }
 
 .menuBusquedas {
   font-size: 1.25rem;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  flex-wrap: wrap;
-}
-.menuBusquedas .busquedasRecuadro {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-content: space-evenly;
-  background-color: rgb(179, 134, 117);
-  border-radius: 15px;
-  color: black;
-  margin: 0.5rem;
-  padding: 0.5rem;
-}
-.menuBusquedas .busquedasRecuadro .button {
-  background-color: rgba(6, 116, 120, 0.754);
-  border-radius: 15%;
-  cursor: pointer;
-  margin: 1rem;
-  padding: 0.1rem;
-  color: #fff;
-}
-.menuBusquedas .busquedasRecuadro .button:hover {
-  background-color: rgba(228, 108, 64, 0.867);
-}
+  flex-wrap: wrap; }
+  .menuBusquedas .busquedasRecuadro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    background-color: #b38675;
+    border-radius: 15px;
+    color: black;
+    margin: 0.5rem;
+    padding: 0.5rem; }
+    .menuBusquedas .busquedasRecuadro .button {
+      background-color: rgba(6, 116, 120, 0.754);
+      border-radius: 15%;
+      cursor: pointer;
+      margin: 1rem;
+      padding: 0.1rem;
+      color: #fff; }
+      .menuBusquedas .busquedasRecuadro .button:hover {
+        background-color: rgba(228, 108, 64, 0.867); }
 
 .contacto {
   font-size: 1.25rem;
   line-height: 3.125rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-areas: "encabezado encabezado" "formulario video";
+  grid-template-areas: "encabezado encabezado" "formulario video";
   grid-column-gap: 5rem;
-  margin: 1rem;
-}
-.contacto .encabezadoContacto {
-  font-family: "Rubik Glitch", cursiva;
-  font-weight: 600;
-  text-align: center;
-  grid-area: encabezado;
-}
-.contacto section form {
-  width: 100%;
-  color: black;
-  grid-area: formulario;
-  display: flex;
-  flex-direction: column;
-  padding: 0.2rem;
-  box-shadow: inset 0 -3em 3em rgba(243, 88, 49, 0.753), 0 0 0 2px rgba(180, 73, 19, 0.527), 0.3em 0.3em 1em rgba(225, 113, 9, 0.952);
-}
-.contacto section form fieldset div .itemForm {
-  margin: 1rem;
-}
-.contacto section form fieldset div .inputContacto {
-  padding: 1% 5% 1% 4%;
-}
-.contacto section form fieldset .casillasForm {
-  margin: 1rem;
-}
-.contacto section form .textAreaForm {
-  height: 6.25rem;
-}
-.contacto section form .casillasForm {
-  margin: 1rem;
-}
-.contacto section form .botonesForm {
-  background-color: rgba(6, 116, 120, 0.754);
-  padding: 0.5rem;
-  margin: 0.5rem;
-  border-radius: 0.6rem;
-  color: #000;
-  cursor: pointer;
-}
-.contacto section form .botonesForm:hover {
-  background-color: rgba(228, 108, 64, 0.867);
-  transform: translate(20px);
-  text-transform: uppercase;
-}
-.contacto .videoContacto {
-  grid-area: video;
-  align-self: center;
-  justify-self: center;
-  width: 100%;
-}
+  margin: 1rem; }
+  .contacto .encabezadoContacto {
+    font-family: 'Rubik Glitch', cursiva;
+    font-weight: 600;
+    text-align: center;
+    grid-area: encabezado; }
+  .contacto section form {
+    width: 100%;
+    color: black;
+    grid-area: formulario;
+    display: flex;
+    flex-direction: column;
+    padding: 0.2rem;
+    box-shadow: inset 0 -3em 3em rgba(243, 88, 49, 0.753), 0 0 0 2px rgba(180, 73, 19, 0.527), 0.3em 0.3em 1em rgba(225, 113, 9, 0.952); }
+    .contacto section form fieldset div .itemForm {
+      margin: 1rem; }
+    .contacto section form fieldset div .inputContacto {
+      padding: 1% 5% 1% 4%; }
+    .contacto section form fieldset .casillasForm {
+      margin: 1rem; }
+    .contacto section form .textAreaForm {
+      height: 6.25rem; }
+    .contacto section form .casillasForm {
+      margin: 1rem; }
+    .contacto section form .botonesForm {
+      background-color: rgba(6, 116, 120, 0.754);
+      padding: 0.5rem;
+      margin: 0.5rem;
+      border-radius: 0.6rem;
+      color: #000;
+      cursor: pointer; }
+      .contacto section form .botonesForm:hover {
+        background-color: rgba(228, 108, 64, 0.867);
+        transform: translate(20px);
+        text-transform: uppercase; }
+  .contacto .videoContacto {
+    grid-area: video;
+    align-self: center;
+    justify-self: center;
+    width: 100%; }
 
 /* MODIFICADO EL PUNTO DE QUIEBRE 1024px */
 @media screen and (max-width: 1024px) {
   header .logo .nombreConsultora {
     margin: 0;
-    padding: 0;
-  }
+    padding: 0; }
   header nav ul li {
     margin: 0;
-    padding: 0;
-  }
+    padding: 0; }
   .contacto {
     font-size: 1.25rem;
     line-height: 30px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.5fr 1fr;
-    grid-template-areas: "encabezado" "formulario" "video";
-    grid-row-gap: 5px;
-  }
-}
+    grid-template-areas: "encabezado" "formulario" "video";
+    grid-row-gap: 5px; } }
+
 /* MODIFICADO EL PUNTO DE QUIEBRE 768px */
 @media screen and (max-width: 768px) {
   header {
     display: grid;
     grid-template-rows: 0.1fr 0.5fr;
     grid-template-columns: 0.5fr 0.5fr;
-    grid-template-areas: "logo nombreConsultora" "nav nav";
-  }
-  header .logo {
-    grid-area: logo;
-    padding-left: 25%;
-    padding-top: 1%;
-  }
-  header .nombreConsultora {
-    grid-area: nombreConsultora;
-  }
-  header nav {
-    grid-area: nav;
-  }
+    grid-template-areas: "logo nombreConsultora" "nav nav"; }
+    header .logo {
+      grid-area: logo;
+      padding-left: 25%;
+      padding-top: 1%; }
+    header .nombreConsultora {
+      grid-area: nombreConsultora; }
+    header nav {
+      grid-area: nav; }
   .menuNosotros {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "nosotrosUno" "nosotrosDos" "nosotrosTres";
-    grid-row-gap: 5px;
-  }
-}
+    grid-template-areas: "nosotrosUno" "nosotrosDos" "nosotrosTres";
+    grid-row-gap: 5px; } }
+
 /* MODIFICADO EL PUNTO DE QUIEBRE 425px */
 @media screen and (max-width: 425px) {
   header {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 0.5fr 0.5fr;
-    grid-template-areas: "logo" "nombreConsultora" "menu";
-  }
-  header .logo {
-    padding-left: 35%;
-  }
-  header .nombreConsultora {
-    text-align: center;
-  }
-  header nav {
-    grid-area: menu;
-  }
-  header nav ul {
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  header nav ul li a {
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 3px;
-    margin: 5px;
-  }
+    grid-template-areas: "logo" "nombreConsultora" "menu"; }
+    header .logo {
+      padding-left: 35%; }
+    header .nombreConsultora {
+      text-align: center; }
+    header nav {
+      grid-area: menu; }
+      header nav ul {
+        flex-wrap: wrap;
+        justify-content: space-evenly; }
+        header nav ul li a {
+          text-decoration: none;
+          cursor: pointer;
+          border-radius: 3px;
+          margin: 5px; }
   .mapaUbicacion {
     display: flex;
-    flex-direction: column;
-  }
+    flex-direction: column; }
   #servicios {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "servicioUno servicioDos" "servicioTres servicioCuatro" "servicioCinco servicioSeis";
-    margin: 0px;
-  }
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "servicioUno"  "servicioDos" "servicioTres" "servicioCuatro" "servicioCinco"  "servicioSeis"; }
   .menuBusquedas {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-  }
+    grid-template-rows: 1fr 1fr 1fr 1fr; }
   .contacto {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 1fr 0.5fr;
-    grid-template-areas: "encabezado" "formulario" "video";
-    grid-row-gap: 1rem;
-  }
-}
+    grid-template-areas: "encabezado" "formulario"  "video";
+    grid-row-gap: 1rem; } }
+
 /* MODIFICADO EL PUNTO DE QUIEBRE 375px */
 @media screen and (max-width: 375px) {
-  ul #servicios {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "servicioUno" "servicioDos" "servicioTres" "servicioCuatro" "servicioCinco" "servicioSeis";
-  }
   section .menuBusquedas {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat 8, 1fr;
-  }
-  section .menuBusquedas div {
-    padding: 0%;
-    margin: 0%;
-  }
+    grid-template-rows: repeat 8, 1fr; }
+    section .menuBusquedas div {
+      padding: 0%;
+      margin: 0%; }
   .contacto {
     margin: 0;
     padding: 0;
-    justify-self: center;
-  }
-  .contacto .encabezadoContacto {
-    font-weight: normal;
-  }
-}
-/* MODIFICADO EL PUNTO DE QUIEBRE 320px */
-@media screen and (max-width: 320px) {
-  #servicios {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: "servicioUno" "servicioDos" "servicioTres" "servicioCuatro" "servicioCinco" "servicioSeis";
-    grid-row-gap: 0px;
-    margin: 2px;
-    padding: 2px;
-  }
-  .busquedas {
-    text-align: center;
-  }
+    justify-self: center; }
+    .contacto .encabezadoContacto {
+      font-weight: normal; }
   .menuBusquedas {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
-  }
+    grid-template-rows: repeat(8, 1fr); } }
+
+/* MODIFICADO EL PUNTO DE QUIEBRE 320px */
+@media screen and (max-width: 320px) {
+  .busquedas {
+    text-align: center; }
   .contacto {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr, 1fr, 1fr;
-    grid-template-areas: "encabezado" "formulario" "video";
-  }
-  .contacto .encabezadoContacto {
-    flex-wrap: nowrap;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr, 1fr;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .contacto section form {
-    width: 80%;
-  }
-  .contacto .videoContacto {
-    width: 80%;
-    margin: 0;
-  }
-}/*# sourceMappingURL=estilo.css.map */
+    grid-template-areas: "encabezado"  "formulario"  "video"; }
+    .contacto .encabezadoContacto {
+      flex-wrap: nowrap;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr,1fr;
+      flex-direction: column;
+      justify-content: center; }
+    .contacto section form {
+      width: 80%; }
+    .contacto .videoContacto {
+      width: 80%;
+      margin: 0; } }
