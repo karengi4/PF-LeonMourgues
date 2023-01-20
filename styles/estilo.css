@@ -278,30 +278,26 @@ footer div .iconos {
   grid-template-rows: 1fr 1fr;
   flex-wrap: wrap;
 }
-.menuBusquedas div {
+.menuBusquedas .busquedasRecuadro {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  align-content: space-between;
-}
-.menuBusquedas div .busquedasRecuadro {
+  justify-content: space-evenly;
+  align-content: space-evenly;
   background-color: rgb(241, 156, 125);
   border-radius: 15px;
   color: black;
-  line-height: 1.7rem;
-  margin: 1.25rem 0.625rem;
-  flex-basis: 11.3rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
 }
-.menuBusquedas div .busquedasRecuadro .button {
+.menuBusquedas .busquedasRecuadro .button {
   background-color: rgba(255, 127, 80, 0.425);
-  border-radius: 10%;
-  padding-right: 20px;
-  padding-left: 20px;
+  border-radius: 15%;
   border: 2px solid blueviolet;
   cursor: pointer;
+  margin: 1rem;
+  padding: 0.1rem;
 }
-.menuBusquedas div .busquedasRecuadro .button:hover {
+.menuBusquedas .busquedasRecuadro .button:hover {
   background-color: rgb(223, 88, 39);
 }
 
