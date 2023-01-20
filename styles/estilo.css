@@ -28,7 +28,7 @@ body {
 }
 
 header {
-  background: rgb(1, 206, 209);
+  background: rgba(83, 161, 161, 0.679);
   grid-area: header;
   display: flex;
   flex-direction: row;
@@ -46,7 +46,7 @@ header .logo {
 header .nombreConsultora {
   flex-basis: 20%;
   font-size: 1rem;
-  color: rgba(250, 102, 49, 0.747);
+  color: rgba(199, 84, 43, 0.728);
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 header .nombreConsultora::first-letter {
@@ -61,7 +61,6 @@ header nav ul {
   justify-content: space-between;
   align-items: center;
   color: white;
-  line-height: 40px;
 }
 header nav ul li {
   font-weight: bold;
@@ -84,7 +83,7 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   color: whitesmoke;
-  background-color: rgb(253, 137, 95);
+  background-color: rgba(228, 108, 64, 0.867);
   transition: 0.5s;
 }
 
@@ -93,7 +92,7 @@ main {
 }
 
 footer {
-  background-color: rgb(1, 206, 209);
+  background-color: rgba(83, 161, 161, 0.679);
   text-align: center;
   grid-area: footer;
   display: flex;
@@ -125,11 +124,12 @@ footer div .iconos {
   align-content: center;
   margin: 16px;
 }
-.bienvenida img {
+.bienvenida .div {
   width: 100%;
 }
 
 .mapaUbicacion {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -148,7 +148,7 @@ footer div .iconos {
   margin: 16px;
 }
 .menuNosotros .nosotros {
-  background-color: rgb(241, 156, 125);
+  background-color: rgb(179, 134, 117);
   padding: 15px;
   border-radius: 15px;
   font-size: 1.25rem;
@@ -161,7 +161,7 @@ footer div .iconos {
   height: 50%;
 }
 .menuNosotros .nosotros .nosotrosTitulo {
-  color: darkmagenta;
+  color: rgb(139, 0, 139);
   font-weight: bold;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -193,13 +193,13 @@ footer div .iconos {
   grid-area: servicioUno;
 }
 #servicios .servicioUno .serviciosTitulo {
-  color: darkmagenta;
+  color: rgb(139, 0, 139);
   list-style-type: none;
   font-weight: bold;
   line-height: 50px;
 }
 #servicios .servicioUno .serviciosParrafo {
-  background-color: rgb(241, 156, 125);
+  background-color: rgb(179, 134, 117);
   border-radius: 10%;
   padding: 15px;
 }
@@ -207,13 +207,13 @@ footer div .iconos {
   grid-area: servicioDos;
 }
 #servicios .servicioDos .serviciosTitulo {
-  color: darkmagenta;
+  color: rgb(139, 0, 139);
   list-style-type: none;
   font-weight: bold;
   line-height: 50px;
 }
 #servicios .servicioDos .serviciosParrafo {
-  background-color: rgb(241, 156, 125);
+  background-color: rgb(179, 134, 117);
   border-radius: 10%;
   padding: 15px;
 }
@@ -221,13 +221,13 @@ footer div .iconos {
   grid-area: servicioTres;
 }
 #servicios .servicioTres .serviciosTitulo {
-  color: darkmagenta;
+  color: rgb(139, 0, 139);
   list-style-type: none;
   font-weight: bold;
   line-height: 50px;
 }
 #servicios .servicioTres .serviciosParrafo {
-  background-color: rgb(241, 156, 125);
+  background-color: rgb(179, 134, 117);
   border-radius: 10%;
   padding: 15px;
 }
@@ -235,13 +235,13 @@ footer div .iconos {
   grid-area: servicioCuatro;
 }
 #servicios .servicioCuatro .serviciosTitulo {
-  color: darkmagenta;
+  color: rgb(139, 0, 139);
   list-style-type: none;
   font-weight: bold;
   line-height: 50px;
 }
 #servicios .servicioCuatro .serviciosParrafo {
-  background-color: rgb(241, 156, 125);
+  background-color: rgb(179, 134, 117);
   border-radius: 10%;
   padding: 15px;
 }
@@ -249,13 +249,13 @@ footer div .iconos {
   grid-area: servicioCinco;
 }
 #servicios .servicioCinco .serviciosTitulo {
-  color: darkmagenta;
+  color: rgb(139, 0, 139);
   list-style-type: none;
   font-weight: bold;
   line-height: 50px;
 }
 #servicios .servicioCinco .serviciosParrafo {
-  background-color: rgb(241, 156, 125);
+  background-color: rgb(179, 134, 117);
   border-radius: 10%;
   padding: 15px;
 }
@@ -263,13 +263,13 @@ footer div .iconos {
   grid-area: servicioSeis;
 }
 #servicios .servicioSeis .serviciosTitulo {
-  color: darkmagenta;
+  color: rgb(139, 0, 139);
   list-style-type: none;
   font-weight: bold;
   line-height: 50px;
 }
 #servicios .servicioSeis .serviciosParrafo {
-  background-color: rgb(241, 156, 125);
+  background-color: rgb(179, 134, 117);
   border-radius: 10%;
   padding: 15px;
 }
@@ -294,14 +294,14 @@ footer div .iconos {
   flex-direction: column;
   justify-content: space-evenly;
   align-content: space-evenly;
-  background-color: rgb(241, 156, 125);
+  background-color: rgb(179, 134, 117);
   border-radius: 15px;
   color: black;
   margin: 0.5rem;
   padding: 0.5rem;
 }
 .menuBusquedas .busquedasRecuadro .button {
-  background-color: rgba(6, 117, 120, 0.425);
+  background-color: rgba(6, 116, 120, 0.754);
   border-radius: 15%;
   cursor: pointer;
   margin: 1rem;
@@ -309,7 +309,7 @@ footer div .iconos {
   color: #fff;
 }
 .menuBusquedas .busquedasRecuadro .button:hover {
-  background-color: rgb(223, 88, 39);
+  background-color: rgba(228, 108, 64, 0.867);
 }
 
 .contacto {
@@ -334,7 +334,7 @@ footer div .iconos {
   display: flex;
   flex-direction: column;
   padding: 0.2rem;
-  box-shadow: inset 0 -3em 3em rgba(243, 88, 49, 0.753), 0 0 0 2px rgba(167, 19, 180, 0.527), 0.3em 0.3em 1em rgba(229, 123, 233, 0.952);
+  box-shadow: inset 0 -3em 3em rgba(243, 88, 49, 0.753), 0 0 0 2px rgba(180, 73, 19, 0.527), 0.3em 0.3em 1em rgba(225, 113, 9, 0.952);
 }
 .contacto section form fieldset div .itemForm {
   margin: 1rem;
@@ -352,7 +352,7 @@ footer div .iconos {
   margin: 1rem;
 }
 .contacto section form .botonesForm {
-  background-color: rgba(6, 117, 120, 0.425);
+  background-color: rgba(6, 116, 120, 0.754);
   padding: 0.5rem;
   margin: 0.5rem;
   border-radius: 0.6rem;
@@ -360,7 +360,7 @@ footer div .iconos {
   cursor: pointer;
 }
 .contacto section form .botonesForm:hover {
-  background-color: rgb(223, 88, 39);
+  background-color: rgba(228, 108, 64, 0.867);
   transform: translate(20px);
   text-transform: uppercase;
 }
@@ -444,6 +444,10 @@ footer div .iconos {
     cursor: pointer;
     border-radius: 3px;
     margin: 5px;
+  }
+  .mapaUbicacion {
+    display: flex;
+    flex-direction: column;
   }
   #servicios {
     grid-template-columns: 1fr 1fr;

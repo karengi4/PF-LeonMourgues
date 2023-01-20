@@ -113,6 +113,11 @@
       }
     }      
   }
+
+.mapaUbicacion {
+  display: flex;
+  flex-direction: column;
+}
   
   #servicios {
     grid-template-columns: 1fr 1fr;

@@ -34,7 +34,7 @@ header {
       justify-content: space-between;
       align-items:center;
       color: white;
-      line-height: 40px;   
+      // line-height: 40px;   
       
       li{
         font-weight: bold;
@@ -58,10 +58,9 @@ header {
 
           &:hover{
             color:whitesmoke;
-            background-color: rgb(253, 137, 95);
+            background-color: $colorhover;
             transition: 0.5s;
-          }
-          
+          }        
         }            
       }
     }
