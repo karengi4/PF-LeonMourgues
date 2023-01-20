@@ -1,4 +1,5 @@
 .bienvenida {
+  grid-area: bienvenida;
   word-spacing:30px;
   line-height: 50px;
   font-family:'Rubik Glitch', cursiva; 
@@ -16,3 +17,15 @@
     width: 100%;
   }
 }
+
+.mapaUbicacion {
+  iframe{
+    width: 400vw;
+    height: 250vh;
+  }
+}
+  
+
+
+
+
